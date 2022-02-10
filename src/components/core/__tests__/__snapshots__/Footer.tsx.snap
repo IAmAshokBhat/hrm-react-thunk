@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component should render and match snapshot 1`] = `
+<div>
+  <div>
+    <div
+      class="MuiTypography-root MuiTypography-overline css-b3fch5-MuiTypography-root"
+      style="text-align: center; bottom: 0px; width: 100%;"
+    >
+      ©Copyright Ashok H Bhat 2022
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,312 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Leaves Page should render and match snapshot 1`] = `
+<div>
+  <div
+    class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-mhc70k-MuiGrid-root"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-12 css-hagxv6-MuiGrid-root"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+      >
+        <div
+          class="recharts-wrapper"
+          style="position: relative; cursor: default; width: 1500px; height: 350px;"
+        >
+          <svg
+            class="recharts-surface"
+            height="350"
+            version="1.1"
+            viewBox="0 0 1500 350"
+            width="1500"
+          >
+            <defs>
+              <clippath
+                id="recharts1-clip"
+              >
+                <rect
+                  height="310"
+                  width="1430"
+                  x="65"
+                  y="5"
+                />
+              </clippath>
+            </defs>
+            <g
+              class="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis"
+            >
+              <line
+                class="recharts-cartesian-axis-line"
+                fill="none"
+                height="30"
+                orientation="bottom"
+                stroke="#666"
+                type="category"
+                width="1430"
+                x="65"
+                x1="65"
+                x2="1495"
+                y="315"
+                y1="315"
+                y2="315"
+              />
+              <g
+                class="recharts-cartesian-axis-ticks"
+              >
+                <g
+                  class="recharts-layer recharts-cartesian-axis-tick"
+                >
+                  <line
+                    class="recharts-cartesian-axis-tick-line"
+                    fill="none"
+                    height="30"
+                    orientation="bottom"
+                    stroke="#666"
+                    type="category"
+                    width="1430"
+                    x="65"
+                    x1="422.5"
+                    x2="422.5"
+                    y="315"
+                    y1="321"
+                    y2="315"
+                  />
+                  <text
+                    class="recharts-text recharts-cartesian-axis-tick-value"
+                    fill="#666"
+                    height="30"
+                    orientation="bottom"
+                    stroke="none"
+                    text-anchor="middle"
+                    type="category"
+                    width="1430"
+                    x="422.5"
+                    y="323"
+                  >
+                    <tspan
+                      dy="0.71em"
+                      x="422.5"
+                    >
+                      0
+                    </tspan>
+                  </text>
+                </g>
+                <g
+                  class="recharts-layer recharts-cartesian-axis-tick"
+                >
+                  <line
+                    class="recharts-cartesian-axis-tick-line"
+                    fill="none"
+                    height="30"
+                    orientation="bottom"
+                    stroke="#666"
+                    type="category"
+                    width="1430"
+                    x="65"
+                    x1="1137.5"
+                    x2="1137.5"
+                    y="315"
+                    y1="321"
+                    y2="315"
+                  />
+                  <text
+                    class="recharts-text recharts-cartesian-axis-tick-value"
+                    fill="#666"
+                    height="30"
+                    orientation="bottom"
+                    stroke="none"
+                    text-anchor="middle"
+                    type="category"
+                    width="1430"
+                    x="1137.5"
+                    y="323"
+                  >
+                    <tspan
+                      dy="0.71em"
+                      x="1137.5"
+                    >
+                      auto
+                    </tspan>
+                  </text>
+                </g>
+              </g>
+            </g>
+            <g
+              class="recharts-layer recharts-cartesian-axis recharts-yAxis yAxis"
+            >
+              <line
+                class="recharts-cartesian-axis-line"
+                fill="none"
+                height="310"
+                orientation="left"
+                stroke="#666"
+                type="number"
+                width="60"
+                x="5"
+                x1="65"
+                x2="65"
+                y="5"
+                y1="5"
+                y2="315"
+              />
+              <g
+                class="recharts-cartesian-axis-ticks"
+              />
+            </g>
+          </svg>
+          <div
+            class="recharts-legend-wrapper"
+            style="position: absolute; width: 1490px; height: auto; left: 5px; bottom: 5px;"
+          >
+            <ul
+              class="recharts-default-legend"
+              style="padding: 0px; margin: 0px; text-align: center;"
+            >
+              <li
+                class="recharts-legend-item legend-item-0"
+                style="display: inline-block; margin-right: 10px;"
+              >
+                <svg
+                  class="recharts-surface"
+                  height="14"
+                  style="display: inline-block; vertical-align: middle; margin-right: 4px;"
+                  version="1.1"
+                  viewBox="0 0 32 32"
+                  width="14"
+                >
+                  <path
+                    class="recharts-legend-icon"
+                    d="M0,4h32v24h-32z"
+                    fill="#2976d2"
+                    stroke="none"
+                  />
+                </svg>
+                <span
+                  class="recharts-legend-item-text"
+                  style="color: rgb(41, 118, 210);"
+                >
+                  days
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="recharts-tooltip-wrapper"
+            style="transform: translate(undefinedpx, undefinedpx); pointer-events: none; visibility: hidden; position: absolute; top: 0px; left: 0px;"
+          >
+            <div
+              class="recharts-default-tooltip"
+              style="margin: 0px; padding: 10px; background-color: rgb(255, 255, 255); border: 1px solid #ccc; white-space: nowrap;"
+            >
+              <p
+                class="recharts-tooltip-label"
+                style="margin: 0px;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-8 css-am41oj-MuiGrid-root"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root css-1v5z4dq-MuiPaper-root-MuiCard-root"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiTableContainer-root css-11xur9t-MuiPaper-root-MuiTableContainer-root"
+        >
+          <table
+            aria-label="Leave details"
+            class="MuiTable-root css-dwyv7x-MuiTable-root"
+          >
+            <thead
+              class="MuiTableHead-root css-15wwp11-MuiTableHead-root"
+            >
+              <tr
+                class="MuiTableRow-root MuiTableRow-head css-1q1u3t4-MuiTableRow-root"
+              >
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+                  scope="col"
+                >
+                  Leave Type
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+                  scope="col"
+                >
+                  No. Of Days
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+                  scope="col"
+                >
+                  From
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+                  scope="col"
+                >
+                  To
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+                  scope="col"
+                >
+                  Status
+                </th>
+              </tr>
+            </thead>
+            <tbody
+              class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
+            />
+          </table>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-4 css-1ube6tp-MuiGrid-root"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root css-1v5z4dq-MuiPaper-root-MuiCard-root"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiTableContainer-root css-11xur9t-MuiPaper-root-MuiTableContainer-root"
+        >
+          <table
+            aria-label="Leave balance"
+            class="MuiTable-root css-dwyv7x-MuiTable-root"
+          >
+            <thead
+              class="MuiTableHead-root css-15wwp11-MuiTableHead-root"
+            >
+              <tr
+                class="MuiTableRow-root MuiTableRow-head css-1q1u3t4-MuiTableRow-root"
+              >
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1howxi1-MuiTableCell-root"
+                  scope="col"
+                >
+                  Leave Type
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1howxi1-MuiTableCell-root"
+                  scope="col"
+                >
+                  Balance
+                </th>
+              </tr>
+            </thead>
+            <tbody
+              class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
+            />
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

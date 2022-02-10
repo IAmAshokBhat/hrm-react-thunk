@@ -1,0 +1,1674 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard page should render and match snapshot 1`] = `
+<div>
+  <div
+    class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-mhc70k-MuiGrid-root"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-9 css-1qpzhgb-MuiGrid-root"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+      >
+        <div
+          class="recharts-wrapper"
+          style="position: relative; cursor: default; width: 1000px; height: 350px;"
+        >
+          <svg
+            class="recharts-surface"
+            height="350"
+            version="1.1"
+            viewBox="0 0 1000 350"
+            width="1000"
+          >
+            <defs>
+              <clippath
+                id="recharts1-clip"
+              >
+                <rect
+                  height="310"
+                  width="930"
+                  x="65"
+                  y="5"
+                />
+              </clippath>
+            </defs>
+            <g
+              class="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis"
+            >
+              <line
+                class="recharts-cartesian-axis-line"
+                fill="none"
+                height="30"
+                orientation="bottom"
+                stroke="#666"
+                type="category"
+                width="930"
+                x="65"
+                x1="65"
+                x2="995"
+                y="315"
+                y1="315"
+                y2="315"
+              />
+              <g
+                class="recharts-cartesian-axis-ticks"
+              >
+                <g
+                  class="recharts-layer recharts-cartesian-axis-tick"
+                >
+                  <line
+                    class="recharts-cartesian-axis-tick-line"
+                    fill="none"
+                    height="30"
+                    orientation="bottom"
+                    stroke="#666"
+                    type="category"
+                    width="930"
+                    x="65"
+                    x1="181.25"
+                    x2="181.25"
+                    y="315"
+                    y1="321"
+                    y2="315"
+                  />
+                  <text
+                    class="recharts-text recharts-cartesian-axis-tick-value"
+                    fill="#666"
+                    height="30"
+                    orientation="bottom"
+                    stroke="none"
+                    text-anchor="middle"
+                    type="category"
+                    width="930"
+                    x="181.25"
+                    y="323"
+                  >
+                    <tspan
+                      dy="0.71em"
+                      x="181.25"
+                    >
+                      31-01-2022
+                    </tspan>
+                  </text>
+                </g>
+                <g
+                  class="recharts-layer recharts-cartesian-axis-tick"
+                >
+                  <line
+                    class="recharts-cartesian-axis-tick-line"
+                    fill="none"
+                    height="30"
+                    orientation="bottom"
+                    stroke="#666"
+                    type="category"
+                    width="930"
+                    x="65"
+                    x1="413.75"
+                    x2="413.75"
+                    y="315"
+                    y1="321"
+                    y2="315"
+                  />
+                  <text
+                    class="recharts-text recharts-cartesian-axis-tick-value"
+                    fill="#666"
+                    height="30"
+                    orientation="bottom"
+                    stroke="none"
+                    text-anchor="middle"
+                    type="category"
+                    width="930"
+                    x="413.75"
+                    y="323"
+                  >
+                    <tspan
+                      dy="0.71em"
+                      x="413.75"
+                    >
+                      01-02-2022
+                    </tspan>
+                  </text>
+                </g>
+                <g
+                  class="recharts-layer recharts-cartesian-axis-tick"
+                >
+                  <line
+                    class="recharts-cartesian-axis-tick-line"
+                    fill="none"
+                    height="30"
+                    orientation="bottom"
+                    stroke="#666"
+                    type="category"
+                    width="930"
+                    x="65"
+                    x1="646.25"
+                    x2="646.25"
+                    y="315"
+                    y1="321"
+                    y2="315"
+                  />
+                  <text
+                    class="recharts-text recharts-cartesian-axis-tick-value"
+                    fill="#666"
+                    height="30"
+                    orientation="bottom"
+                    stroke="none"
+                    text-anchor="middle"
+                    type="category"
+                    width="930"
+                    x="646.25"
+                    y="323"
+                  >
+                    <tspan
+                      dy="0.71em"
+                      x="646.25"
+                    >
+                      02-02-2022
+                    </tspan>
+                  </text>
+                </g>
+                <g
+                  class="recharts-layer recharts-cartesian-axis-tick"
+                >
+                  <line
+                    class="recharts-cartesian-axis-tick-line"
+                    fill="none"
+                    height="30"
+                    orientation="bottom"
+                    stroke="#666"
+                    type="category"
+                    width="930"
+                    x="65"
+                    x1="878.75"
+                    x2="878.75"
+                    y="315"
+                    y1="321"
+                    y2="315"
+                  />
+                  <text
+                    class="recharts-text recharts-cartesian-axis-tick-value"
+                    fill="#666"
+                    height="30"
+                    orientation="bottom"
+                    stroke="none"
+                    text-anchor="middle"
+                    type="category"
+                    width="930"
+                    x="878.75"
+                    y="323"
+                  >
+                    <tspan
+                      dy="0.71em"
+                      x="878.75"
+                    >
+                      03-02-2022
+                    </tspan>
+                  </text>
+                </g>
+              </g>
+            </g>
+            <g
+              class="recharts-layer recharts-cartesian-axis recharts-yAxis yAxis"
+            >
+              <line
+                class="recharts-cartesian-axis-line"
+                fill="none"
+                height="310"
+                orientation="left"
+                stroke="#666"
+                type="number"
+                width="60"
+                x="5"
+                x1="65"
+                x2="65"
+                y="5"
+                y1="5"
+                y2="315"
+              />
+              <g
+                class="recharts-cartesian-axis-ticks"
+              >
+                <g
+                  class="recharts-layer recharts-cartesian-axis-tick"
+                >
+                  <line
+                    class="recharts-cartesian-axis-tick-line"
+                    fill="none"
+                    height="310"
+                    orientation="left"
+                    stroke="#666"
+                    type="number"
+                    width="60"
+                    x="5"
+                    x1="59"
+                    x2="65"
+                    y="5"
+                    y1="315"
+                    y2="315"
+                  />
+                  <text
+                    class="recharts-text recharts-cartesian-axis-tick-value"
+                    fill="#666"
+                    height="310"
+                    orientation="left"
+                    stroke="none"
+                    text-anchor="end"
+                    type="number"
+                    width="60"
+                    x="57"
+                    y="315"
+                  >
+                    <tspan
+                      dy="0.355em"
+                      x="57"
+                    >
+                      0
+                    </tspan>
+                  </text>
+                </g>
+                <g
+                  class="recharts-layer recharts-cartesian-axis-tick"
+                >
+                  <line
+                    class="recharts-cartesian-axis-tick-line"
+                    fill="none"
+                    height="310"
+                    orientation="left"
+                    stroke="#666"
+                    type="number"
+                    width="60"
+                    x="5"
+                    x1="59"
+                    x2="65"
+                    y="5"
+                    y1="237.5"
+                    y2="237.5"
+                  />
+                  <text
+                    class="recharts-text recharts-cartesian-axis-tick-value"
+                    fill="#666"
+                    height="310"
+                    orientation="left"
+                    stroke="none"
+                    text-anchor="end"
+                    type="number"
+                    width="60"
+                    x="57"
+                    y="237.5"
+                  >
+                    <tspan
+                      dy="0.355em"
+                      x="57"
+                    >
+                      3
+                    </tspan>
+                  </text>
+                </g>
+                <g
+                  class="recharts-layer recharts-cartesian-axis-tick"
+                >
+                  <line
+                    class="recharts-cartesian-axis-tick-line"
+                    fill="none"
+                    height="310"
+                    orientation="left"
+                    stroke="#666"
+                    type="number"
+                    width="60"
+                    x="5"
+                    x1="59"
+                    x2="65"
+                    y="5"
+                    y1="160"
+                    y2="160"
+                  />
+                  <text
+                    class="recharts-text recharts-cartesian-axis-tick-value"
+                    fill="#666"
+                    height="310"
+                    orientation="left"
+                    stroke="none"
+                    text-anchor="end"
+                    type="number"
+                    width="60"
+                    x="57"
+                    y="160"
+                  >
+                    <tspan
+                      dy="0.355em"
+                      x="57"
+                    >
+                      6
+                    </tspan>
+                  </text>
+                </g>
+                <g
+                  class="recharts-layer recharts-cartesian-axis-tick"
+                >
+                  <line
+                    class="recharts-cartesian-axis-tick-line"
+                    fill="none"
+                    height="310"
+                    orientation="left"
+                    stroke="#666"
+                    type="number"
+                    width="60"
+                    x="5"
+                    x1="59"
+                    x2="65"
+                    y="5"
+                    y1="82.5"
+                    y2="82.5"
+                  />
+                  <text
+                    class="recharts-text recharts-cartesian-axis-tick-value"
+                    fill="#666"
+                    height="310"
+                    orientation="left"
+                    stroke="none"
+                    text-anchor="end"
+                    type="number"
+                    width="60"
+                    x="57"
+                    y="82.5"
+                  >
+                    <tspan
+                      dy="0.355em"
+                      x="57"
+                    >
+                      9
+                    </tspan>
+                  </text>
+                </g>
+                <g
+                  class="recharts-layer recharts-cartesian-axis-tick"
+                >
+                  <line
+                    class="recharts-cartesian-axis-tick-line"
+                    fill="none"
+                    height="310"
+                    orientation="left"
+                    stroke="#666"
+                    type="number"
+                    width="60"
+                    x="5"
+                    x1="59"
+                    x2="65"
+                    y="5"
+                    y1="5"
+                    y2="5"
+                  />
+                  <text
+                    class="recharts-text recharts-cartesian-axis-tick-value"
+                    fill="#666"
+                    height="310"
+                    orientation="left"
+                    stroke="none"
+                    text-anchor="end"
+                    type="number"
+                    width="60"
+                    x="57"
+                    y="5"
+                  >
+                    <tspan
+                      dy="0.355em"
+                      x="57"
+                    >
+                      12
+                    </tspan>
+                  </text>
+                </g>
+              </g>
+            </g>
+            <g
+              class="recharts-layer recharts-bar"
+            >
+              <g
+                class="recharts-layer recharts-bar-rectangles"
+              >
+                <g
+                  class="recharts-layer"
+                >
+                  <g
+                    class="recharts-layer recharts-bar-rectangle"
+                  />
+                  <g
+                    class="recharts-layer recharts-bar-rectangle"
+                  />
+                  <g
+                    class="recharts-layer recharts-bar-rectangle"
+                  />
+                  <g
+                    class="recharts-layer recharts-bar-rectangle"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+          <div
+            class="recharts-legend-wrapper"
+            style="position: absolute; width: 990px; height: auto; left: 5px; bottom: 5px;"
+          >
+            <ul
+              class="recharts-default-legend"
+              style="padding: 0px; margin: 0px; text-align: center;"
+            >
+              <li
+                class="recharts-legend-item legend-item-0"
+                style="display: inline-block; margin-right: 10px;"
+              >
+                <svg
+                  class="recharts-surface"
+                  height="14"
+                  style="display: inline-block; vertical-align: middle; margin-right: 4px;"
+                  version="1.1"
+                  viewBox="0 0 32 32"
+                  width="14"
+                >
+                  <path
+                    class="recharts-legend-icon"
+                    d="M0,4h32v24h-32z"
+                    fill="#2976d2"
+                    stroke="none"
+                  />
+                </svg>
+                <span
+                  class="recharts-legend-item-text"
+                  style="color: rgb(41, 118, 210);"
+                >
+                  noOfHours
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="recharts-tooltip-wrapper"
+            style="transform: translate(undefinedpx, undefinedpx); pointer-events: none; visibility: hidden; position: absolute; top: 0px; left: 0px;"
+          >
+            <div
+              class="recharts-default-tooltip"
+              style="margin: 0px; padding: 10px; background-color: rgb(255, 255, 255); border: 1px solid #ccc; white-space: nowrap;"
+            >
+              <p
+                class="recharts-tooltip-label"
+                style="margin: 0px;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-kgdgla-MuiGrid-root"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+        style="padding: 15px;"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1cljjma-MuiAvatar-root"
+            style="left: 100px;"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+              data-testid="PersonIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+              />
+            </svg>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+          >
+            <h5
+              class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+            >
+              ABC
+            </h5>
+            <div>
+              <span
+                class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+              >
+                Software Engineer
+              </span>
+            </div>
+            <div>
+              <span
+                class="MuiTypography-root MuiTypography-subtitle1 css-e0r9sn-MuiTypography-root"
+              >
+                Email:
+              </span>
+              <span
+                class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+              >
+                noemail@email.com
+              </span>
+            </div>
+            <div>
+              <span
+                class="MuiTypography-root MuiTypography-subtitle1 css-e0r9sn-MuiTypography-root"
+              >
+                Manager:
+              </span>
+              <span
+                class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+              >
+                XYZ
+              </span>
+            </div>
+            <div>
+              <span
+                class="MuiTypography-root MuiTypography-subtitle1 css-e0r9sn-MuiTypography-root"
+              >
+                Employee ID:
+              </span>
+              <span
+                class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+              >
+                1
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-9 css-1qpzhgb-MuiGrid-root"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+        style="height: 367px;"
+      >
+        <div
+          class="rbc-calendar"
+        >
+          <div
+            class="rbc-toolbar"
+          >
+            <span
+              class="rbc-btn-group"
+            >
+              <button
+                type="button"
+              >
+                Today
+              </button>
+              <button
+                type="button"
+              >
+                Back
+              </button>
+              <button
+                type="button"
+              >
+                Next
+              </button>
+            </span>
+            <span
+              class="rbc-toolbar-label"
+            >
+              February 2022
+            </span>
+            <span
+              class="rbc-btn-group"
+            >
+              <button
+                class="rbc-active"
+                type="button"
+              >
+                Month
+              </button>
+              <button
+                class=""
+                type="button"
+              >
+                Week
+              </button>
+              <button
+                class=""
+                type="button"
+              >
+                Day
+              </button>
+              <button
+                class=""
+                type="button"
+              >
+                Agenda
+              </button>
+            </span>
+          </div>
+          <div
+            aria-label="Month View"
+            class="rbc-month-view"
+            role="table"
+          >
+            <div
+              class="rbc-row rbc-month-header"
+              role="row"
+            >
+              <div
+                class="rbc-header"
+              >
+                <span
+                  aria-sort="none"
+                  role="columnheader"
+                >
+                  Sun
+                </span>
+              </div>
+              <div
+                class="rbc-header"
+              >
+                <span
+                  aria-sort="none"
+                  role="columnheader"
+                >
+                  Mon
+                </span>
+              </div>
+              <div
+                class="rbc-header"
+              >
+                <span
+                  aria-sort="none"
+                  role="columnheader"
+                >
+                  Tue
+                </span>
+              </div>
+              <div
+                class="rbc-header"
+              >
+                <span
+                  aria-sort="none"
+                  role="columnheader"
+                >
+                  Wed
+                </span>
+              </div>
+              <div
+                class="rbc-header"
+              >
+                <span
+                  aria-sort="none"
+                  role="columnheader"
+                >
+                  Thu
+                </span>
+              </div>
+              <div
+                class="rbc-header"
+              >
+                <span
+                  aria-sort="none"
+                  role="columnheader"
+                >
+                  Fri
+                </span>
+              </div>
+              <div
+                class="rbc-header"
+              >
+                <span
+                  aria-sort="none"
+                  role="columnheader"
+                >
+                  Sat
+                </span>
+              </div>
+            </div>
+            <div
+              class="rbc-month-row"
+              role="rowgroup"
+            >
+              <div
+                class="rbc-row-bg"
+              >
+                <div
+                  class="rbc-day-bg rbc-off-range-bg"
+                />
+                <div
+                  class="rbc-day-bg rbc-off-range-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+              </div>
+              <div
+                class="rbc-row-content"
+                role="row"
+              >
+                <div
+                  class="rbc-row "
+                >
+                  <div
+                    class="rbc-date-cell rbc-off-range"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      30
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell rbc-off-range"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      31
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      01
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      02
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      03
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      04
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      05
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="rbc-row"
+                >
+                  <div
+                    class="rbc-row-segment"
+                    style="flex-basis: 28.57142857142857%; max-width: 28.57142857142857%;"
+                  >
+                     
+                  </div>
+                  <div
+                    class="rbc-row-segment"
+                    style="flex-basis: 14.285714285714285%; max-width: 14.285714285714285%;"
+                  >
+                    <div
+                      class="rbc-event rbc-event-allday"
+                      style="background: rgb(41, 118, 210); border-radius: 5px; opacity: 0.8; color: white; border: 0px; display: block;"
+                      tabindex="0"
+                    >
+                      <div
+                        class="rbc-event-content"
+                        title="WORKING"
+                      >
+                        WORKING
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="rbc-row-segment"
+                    style="flex-basis: 57.14285714285714%; max-width: 57.14285714285714%;"
+                  >
+                    <div
+                      class="rbc-event rbc-event-allday rbc-event-continues-after"
+                      style="background: rgb(11, 145, 2); border-radius: 5px; opacity: 0.8; color: white; border: 0px; display: block;"
+                      tabindex="0"
+                    >
+                      <div
+                        class="rbc-event-content"
+                        title="LEAVE"
+                      >
+                        LEAVE
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="rbc-row"
+                >
+                  <div
+                    class="rbc-row-segment"
+                    style="flex-basis: 42.857142857142854%; max-width: 42.857142857142854%;"
+                  >
+                     
+                  </div>
+                  <div
+                    class="rbc-row-segment"
+                    style="flex-basis: 14.285714285714285%; max-width: 14.285714285714285%;"
+                  >
+                    <div
+                      class="rbc-event rbc-event-allday"
+                      style="background: rgb(41, 118, 210); border-radius: 5px; opacity: 0.8; color: white; border: 0px; display: block;"
+                      tabindex="0"
+                    >
+                      <div
+                        class="rbc-event-content"
+                        title="WORKING"
+                      >
+                        WORKING
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="rbc-row-segment"
+                    style="flex-basis: 14.285714285714285%; max-width: 14.285714285714285%;"
+                  >
+                    <div
+                      class="rbc-event rbc-event-allday"
+                      style="background: rgb(41, 118, 210); border-radius: 5px; opacity: 0.8; color: white; border: 0px; display: block;"
+                      tabindex="0"
+                    >
+                      <div
+                        class="rbc-event-content"
+                        title="WORKING"
+                      >
+                        WORKING
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rbc-month-row"
+              role="rowgroup"
+            >
+              <div
+                class="rbc-row-bg"
+              >
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg rbc-today"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+              </div>
+              <div
+                class="rbc-row-content"
+                role="row"
+              >
+                <div
+                  class="rbc-row "
+                >
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      06
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      07
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      08
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      09
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell rbc-now rbc-current"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      10
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      11
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      12
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="rbc-row"
+                >
+                  <div
+                    class="rbc-row-segment"
+                    style="flex-basis: 14.285714285714285%; max-width: 14.285714285714285%;"
+                  >
+                    <div
+                      class="rbc-event rbc-event-allday rbc-event-continues-prior"
+                      style="background: rgb(11, 145, 2); border-radius: 5px; opacity: 0.8; color: white; border: 0px; display: block;"
+                      tabindex="0"
+                    >
+                      <div
+                        class="rbc-event-content"
+                        title="LEAVE"
+                      >
+                        LEAVE
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="rbc-row-segment"
+                    style="flex-basis: 28.57142857142857%; max-width: 28.57142857142857%;"
+                  >
+                     
+                  </div>
+                  <div
+                    class="rbc-row-segment"
+                    style="flex-basis: 14.285714285714285%; max-width: 14.285714285714285%;"
+                  >
+                    <div
+                      class="rbc-event rbc-event-allday"
+                      style="background: rgb(41, 118, 210); border-radius: 5px; opacity: 0.8; color: white; border: 0px; display: block;"
+                      tabindex="0"
+                    >
+                      <div
+                        class="rbc-event-content"
+                        title="WORKING"
+                      >
+                        WORKING
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="rbc-row-segment"
+                    style="flex-basis: 28.57142857142857%; max-width: 28.57142857142857%;"
+                  >
+                    <div
+                      class="rbc-event rbc-event-allday"
+                      style="background: rgb(11, 145, 2); border-radius: 5px; opacity: 0.8; color: white; border: 0px; display: block;"
+                      tabindex="0"
+                    >
+                      <div
+                        class="rbc-event-content"
+                        title="LEAVE"
+                      >
+                        LEAVE
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rbc-month-row"
+              role="rowgroup"
+            >
+              <div
+                class="rbc-row-bg"
+              >
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+              </div>
+              <div
+                class="rbc-row-content"
+                role="row"
+              >
+                <div
+                  class="rbc-row "
+                >
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      13
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      14
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      15
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      16
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      17
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      18
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      19
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rbc-month-row"
+              role="rowgroup"
+            >
+              <div
+                class="rbc-row-bg"
+              >
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+              </div>
+              <div
+                class="rbc-row-content"
+                role="row"
+              >
+                <div
+                  class="rbc-row "
+                >
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      20
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      21
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      22
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      23
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      24
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      25
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      26
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="rbc-row"
+                >
+                  <div
+                    class="rbc-row-segment"
+                    style="flex-basis: 28.57142857142857%; max-width: 28.57142857142857%;"
+                  >
+                     
+                  </div>
+                  <div
+                    class="rbc-row-segment"
+                    style="flex-basis: 14.285714285714285%; max-width: 14.285714285714285%;"
+                  >
+                    <div
+                      class="rbc-event rbc-event-allday"
+                      style="background: rgb(11, 145, 2); border-radius: 5px; opacity: 0.8; color: white; border: 0px; display: block;"
+                      tabindex="0"
+                    >
+                      <div
+                        class="rbc-event-content"
+                        title="LEAVE"
+                      >
+                        LEAVE
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rbc-month-row"
+              role="rowgroup"
+            >
+              <div
+                class="rbc-row-bg"
+              >
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg rbc-off-range-bg"
+                />
+                <div
+                  class="rbc-day-bg rbc-off-range-bg"
+                />
+                <div
+                  class="rbc-day-bg rbc-off-range-bg"
+                />
+                <div
+                  class="rbc-day-bg rbc-off-range-bg"
+                />
+                <div
+                  class="rbc-day-bg rbc-off-range-bg"
+                />
+              </div>
+              <div
+                class="rbc-row-content"
+                role="row"
+              >
+                <div
+                  class="rbc-row "
+                >
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      27
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      28
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell rbc-off-range"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      01
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell rbc-off-range"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      02
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell rbc-off-range"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      03
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell rbc-off-range"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      04
+                    </a>
+                  </div>
+                  <div
+                    class="rbc-date-cell rbc-off-range"
+                    role="cell"
+                  >
+                    <a
+                      href="#"
+                      role="cell"
+                    >
+                      05
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-1equabv-MuiGrid-root"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiTableCell-root MuiTableCell-sizeMedium css-sow7bl-MuiPaper-root-MuiTableCell-root"
+        width="100%"
+      >
+        <table
+          aria-label="holiday table"
+          class="MuiTable-root css-1y3zdhj-MuiTable-root"
+        >
+          <thead
+            class="MuiTableHead-root css-15wwp11-MuiTableHead-root"
+          >
+            <tr
+              class="MuiTableRow-root MuiTableRow-head css-1q1u3t4-MuiTableRow-root"
+            >
+              <th
+                class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1howxi1-MuiTableCell-root"
+                scope="col"
+              >
+                Date
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1howxi1-MuiTableCell-root"
+                scope="col"
+              >
+                Festival Name
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
+          >
+            <tr
+              class="MuiTableRow-root css-34nofg-MuiTableRow-root"
+            >
+              <th
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+                scope="row"
+              >
+                01/01/2022
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+                scope="row"
+              >
+                New Years day
+              </th>
+            </tr>
+            <tr
+              class="MuiTableRow-root css-34nofg-MuiTableRow-root"
+            >
+              <th
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+                scope="row"
+              >
+                14/01/2022
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+                scope="row"
+              >
+                Sankranthi
+              </th>
+            </tr>
+            <tr
+              class="MuiTableRow-root css-34nofg-MuiTableRow-root"
+            >
+              <th
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+                scope="row"
+              >
+                26/01/2022
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+                scope="row"
+              >
+                Republic Day
+              </th>
+            </tr>
+            <tr
+              class="MuiTableRow-root css-34nofg-MuiTableRow-root"
+            >
+              <th
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+                scope="row"
+              >
+                17/03/2022
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+                scope="row"
+              >
+                Holi
+              </th>
+            </tr>
+            <tr
+              class="MuiTableRow-root css-34nofg-MuiTableRow-root"
+            >
+              <th
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+                scope="row"
+              >
+                15/04/2022
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+                scope="row"
+              >
+                Good Friday
+              </th>
+            </tr>
+            <tr
+              class="MuiTableRow-root css-34nofg-MuiTableRow-root"
+            >
+              <th
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+                scope="row"
+              >
+                03/05/2022
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+                scope="row"
+              >
+                Khutba - E - Ramzan
+              </th>
+            </tr>
+            <tr
+              class="MuiTableRow-root css-34nofg-MuiTableRow-root"
+            >
+              <th
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+                scope="row"
+              >
+                15/08/2022
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+                scope="row"
+              >
+                Independence Day
+              </th>
+            </tr>
+            <tr
+              class="MuiTableRow-root css-34nofg-MuiTableRow-root"
+            >
+              <th
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+                scope="row"
+              >
+                31/08/2022
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+                scope="row"
+              >
+                Ganesha Festival
+              </th>
+            </tr>
+            <tr
+              class="MuiTableRow-root css-34nofg-MuiTableRow-root"
+            >
+              <th
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+                scope="row"
+              >
+                05/10/2022
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+                scope="row"
+              >
+                Dasara / Vijayadashmi
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+`;
