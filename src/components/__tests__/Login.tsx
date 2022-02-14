@@ -1,4 +1,4 @@
-import { screen, waitFor } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { SnackbarProvider } from 'notistack';
 import { loginAPI } from '../../api';
@@ -6,7 +6,6 @@ import { TAnyObject } from '../../constants';
 import { mockAPICall, renderWithProvider } from '../../testUtils';
 import { LoginPage } from '../Login';
 import { defaultState } from './fixtures';
-import * as loginAction from '../../redux/actions/loginAction';
 
 jest.mock('../../api', () => ({
   loginAPI: jest.fn()
@@ -35,7 +34,7 @@ describe('Login Page', () => {
   });
 
   it.only('should login when valid username and password is passed', async () => {
-    const loginActionSpy = jest.spyOn(loginAction, 'loginAction');
+    // const loginActionSpy = jest.spyOn(loginAction, 'loginAction');
 
     mockAPICall(loginAPI, {
       ok: true,

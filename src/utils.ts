@@ -1,5 +1,3 @@
-import moment from 'moment';
-
 export const isValidToken = () => {
   let tokenExpiry = Number(localStorage.getItem('expires'));
   return new Date(tokenExpiry) > new Date();
@@ -19,16 +17,16 @@ const customHeaders = {
   'Content-Type': 'application/json'
 };
 
-const isTokenNearExpiry = () => {
-  if (localStorage.getItem('expires') === null) {
-    return false;
-  }
-  const tokenExpiry = Number(localStorage.getItem('expires'));
+// const isTokenNearExpiry = () => {
+//   if (localStorage.getItem('expires') === null) {
+//     return false;
+//   }
+//   const tokenExpiry = Number(localStorage.getItem('expires'));
 
-  const minutesToExpiry = moment(tokenExpiry).diff(new Date(), 'minutes');
+//   const minutesToExpiry = moment(tokenExpiry).diff(new Date(), 'minutes');
 
-  return minutesToExpiry <= 15;
-};
+//   return minutesToExpiry <= 15;
+// };
 
 export const fetchWithToken = (url: string, options?: IRequestOptions) => {
   const requestOptions: IRequestOptions = {
@@ -49,14 +47,14 @@ export const fetchWithToken = (url: string, options?: IRequestOptions) => {
   return fetch(url, requestOptions);
 };
 
-const reFetchToken = () => {
-  return new Promise(async (res, rej) => {
-    await fetch('/refresh', { headers: customHeaders })
-      .then((response) => response.json())
-      .then((json) => {
-        localStorage.setItem('userToken', json.token);
-        localStorage.setItem('expires', json.expires);
-        res(json);
-      });
-  });
-};
+// const reFetchToken = () => {
+//   return new Promise(async (res, rej) => {
+//     await fetch('/refresh', { headers: customHeaders })
+//       .then((response) => response.json())
+//       .then((json) => {
+//         localStorage.setItem('userToken', json.token);
+//         localStorage.setItem('expires', json.expires);
+//         res(json);
+//       });
+//   });
+// };

@@ -5,7 +5,7 @@ import {
   INewLeave,
   IRegisterAPI
 } from '../../../constants';
-import { generateActionTests, ResponseMock } from '../../../testUtils';
+import { generateActionTests } from '../../../testUtils';
 import * as actions from '../index';
 
 jest.mock('../../../api', () => ({
