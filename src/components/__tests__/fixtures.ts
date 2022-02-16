@@ -212,7 +212,7 @@ export const leaveBalanceAPIResponse: ILeaveBalanceAPI = {
 export const allLeavesAPIResponse: IAllLeavesAPI = {
   data: [
     {
-      from_date: '2022-02-02',
+      from_date: '2022-01-31',
       to_date: '2022-02-07',
       leave_type: 'Earned Leave',
       status: 0
