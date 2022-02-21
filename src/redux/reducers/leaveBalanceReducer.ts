@@ -1,4 +1,9 @@
-import { ACTIONS, ILeaveBalance, ILeaveBalanceAction } from '../../constants';
+import {
+  ACTIONS,
+  defaultAction,
+  ILeaveBalance,
+  ILeaveBalanceAction
+} from '../../constants';
 
 const initialState = {
   loading: false,
@@ -8,12 +13,12 @@ const initialState = {
 
 export const leaveBalanceReducer = (
   state = initialState,
-  action: ILeaveBalanceAction = { type: '', payload: null }
+  action: ILeaveBalanceAction = defaultAction
 ) => {
   switch (action.type) {
-    case ACTIONS.GET_LEAVE_BALANCE_LOADING:
+    case `${ACTIONS.GET_LEAVE_BALANCE}_LOADING`:
       return { ...state, loading: true };
-    case ACTIONS.GET_LEAVE_BALANCE_SUCCESS:
+    case `${ACTIONS.GET_LEAVE_BALANCE}_SUCCESS`:
       let value: ILeaveBalance[] = [];
       if (action.payload) {
         value = action.payload.map(
@@ -25,7 +30,7 @@ export const leaveBalanceReducer = (
         );
       }
       return { ...state, loading: false, value };
-    case ACTIONS.GET_LEAVE_BALANCE_FAILURE:
+    case `${ACTIONS.GET_LEAVE_BALANCE}_FAILURE`:
       return { ...state, loading: false, error: action.payload };
     default:
       return state;

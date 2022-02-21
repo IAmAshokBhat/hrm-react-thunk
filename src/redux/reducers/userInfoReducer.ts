@@ -1,4 +1,4 @@
-import { ACTIONS, IUserInfoAction } from '../../constants';
+import { ACTIONS, defaultAction, IUserInfoAction } from '../../constants';
 
 const initialState = {
   loading: false,
@@ -8,21 +8,21 @@ const initialState = {
 
 export const userInfoReducer = (
   state = initialState,
-  action: IUserInfoAction = { type: '', payload: null }
+  action: IUserInfoAction = defaultAction
 ) => {
   switch (action.type) {
-    case ACTIONS.GET_USER_DETAILS_LOADING:
+    case `${ACTIONS.GET_USER_DETAILS}_LOADING`:
       return { ...state, loading: true };
-    case ACTIONS.GET_USER_DETAILS_SUCCESS:
+    case `${ACTIONS.GET_USER_DETAILS}_SUCCESS`:
       let value = {};
       if (action.payload) {
-        // eslint-disable-next-line @typescript-eslint/naming-convention
+        // eslint-disable-next-line
         const { user_id, name, designation, manager, email } = action.payload;
         value = { userId: user_id, name, designation, manager, email };
       }
 
       return { loading: false, value };
-    case ACTIONS.GET_USER_DETAILS_FAILURE:
+    case `${ACTIONS.GET_USER_DETAILS}_FAILURE`:
       return { ...initialState, error: action.payload };
     default:
       return state;

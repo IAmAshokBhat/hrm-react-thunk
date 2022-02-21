@@ -1,4 +1,6 @@
-import { ACTIONS, ILoginAction } from '../../constants';
+import { ACTIONS, defaultAction } from '../../constants';
+import { TFReducer } from '../../contracts';
+import { generateReducer } from './utils';
 
 const initialState = {
   loading: false,
@@ -6,18 +8,7 @@ const initialState = {
   error: null
 };
 
-export const loginReducer = (
+export const loginReducer: TFReducer = (
   state = initialState,
-  action: ILoginAction = { type: '', payload: null }
-) => {
-  switch (action.type) {
-    case ACTIONS.LOGIN_LOADING:
-      return { ...state, loading: true };
-    case ACTIONS.LOGIN_SUCCESS:
-      return { loading: false, value: action.payload };
-    case ACTIONS.LOGIN_FAILURE:
-      return { ...initialState, error: action.payload };
-    default:
-      return state;
-  }
-};
+  action = defaultAction
+) => generateReducer(state, action, ACTIONS.GET_LOGIN);

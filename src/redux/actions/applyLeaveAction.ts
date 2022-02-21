@@ -3,15 +3,15 @@ import { applyLeaveAPI } from '../../api';
 import { ACTIONS, IAttendanceDetailsAPI, INewLeave } from '../../constants';
 
 const setApplyLeaveFailureAction = () => ({
-  type: ACTIONS.GET_APPLY_LEAVE_FAILURE
+  type: `${ACTIONS.APPLY_LEAVE}_FAILURE`
 });
 
 const setApplyLeaveLoadingAction = () => ({
-  type: ACTIONS.GET_APPLY_LEAVE_LOADING
+  type: `${ACTIONS.APPLY_LEAVE}_LOADING`
 });
 
 const applyLeaveSuccessAction = (payload: IAttendanceDetailsAPI) => ({
-  type: ACTIONS.GET_APPLY_LEAVE_SUCCESS,
+  type: `${ACTIONS.APPLY_LEAVE}_SUCCESS`,
   payload
 });
 

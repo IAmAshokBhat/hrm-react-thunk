@@ -1,4 +1,6 @@
-import { ACTIONS, IGenericAction } from '../../constants';
+import { ACTIONS, defaultAction } from '../../constants';
+import { TFReducer } from '../../contracts';
+import { generateReducer } from './utils';
 
 const initialState = {
   loading: false,
@@ -6,18 +8,7 @@ const initialState = {
   error: null
 };
 
-export const applyLeaveReducer = (
+export const applyLeaveReducer: TFReducer = (
   state = initialState,
-  action: IGenericAction = { type: '', payload: null }
-) => {
-  switch (action.type) {
-    case ACTIONS.GET_APPLY_LEAVE_LOADING:
-      return { ...state, loading: true };
-    case ACTIONS.GET_APPLY_LEAVE_SUCCESS:
-      return { ...state, loading: false, value: action.payload || null };
-    case ACTIONS.GET_APPLY_LEAVE_FAILURE:
-      return { ...state, loading: false, error: action.payload };
-    default:
-      return state;
-  }
-};
+  action = defaultAction
+) => generateReducer(state, action, ACTIONS.APPLY_LEAVE);

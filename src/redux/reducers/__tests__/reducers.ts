@@ -38,7 +38,7 @@ describe('Reducer tests', () => {
     'addAttendanceReducer',
     addAttendanceReducer,
     selectAddAttendanceState,
-    ACTIONS.GET_ADD_ATTENDANCE,
+    ACTIONS.ADD_ATTENDANCE,
     null,
     null
   );
@@ -55,7 +55,7 @@ describe('Reducer tests', () => {
     'applyLeaveReducer',
     applyLeaveReducer,
     selectApplyLeaveState,
-    ACTIONS.GET_APPLY_LEAVE,
+    ACTIONS.APPLY_LEAVE,
     null,
     null
   );

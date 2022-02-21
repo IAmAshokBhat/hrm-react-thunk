@@ -3,15 +3,15 @@ import { registerAPI } from '../../api';
 import { ACTIONS, IGenericResponse, IRegisterAPI } from '../../constants';
 
 const setRegisterFailureAction = () => ({
-  type: ACTIONS.REGISTER_FAILURE
+  type: `${ACTIONS.REGISTER}_FAILURE`
 });
 
 const setRegisterLoadingAction = () => ({
-  type: ACTIONS.REGISTER_LOADING
+  type: `${ACTIONS.REGISTER}_LOADING`
 });
 
 const registerSuccessAction = (payload: IGenericResponse) => ({
-  type: ACTIONS.REGISTER_SUCCESS,
+  type: `${ACTIONS.REGISTER}_SUCCESS`,
   payload
 });
 

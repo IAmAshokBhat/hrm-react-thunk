@@ -1,6 +1,7 @@
 import moment from 'moment';
 import {
   ACTIONS,
+  defaultAction,
   IAllLeavesAction,
   IKeyValue,
   ILeaveCountByMonth
@@ -14,12 +15,12 @@ const initialState = {
 
 export const leaveCountByMonthReducer = (
   state = initialState,
-  action: IAllLeavesAction = { type: '', payload: null }
+  action: IAllLeavesAction = defaultAction
 ) => {
   switch (action.type) {
-    case ACTIONS.GET_ALL_LEAVES_LOADING:
+    case `${ACTIONS.GET_ALL_LEAVES}_LOADING`:
       return { ...state, loading: true };
-    case ACTIONS.GET_ALL_LEAVES_SUCCESS:
+    case `${ACTIONS.GET_ALL_LEAVES}_SUCCESS`:
       const leavesByMonth: IKeyValue = {
         Jan: 0,
         Feb: 0,
@@ -81,7 +82,7 @@ export const leaveCountByMonthReducer = (
         (key) => ({ days: leavesByMonth[key], month: key })
       );
       return { ...state, loading: false, value };
-    case ACTIONS.GET_ALL_LEAVES_FAILURE:
+    case `${ACTIONS.GET_ALL_LEAVES}_FAILURE`:
       return { ...state, loading: false, error: action.payload };
     default:
       return state;

@@ -3,15 +3,15 @@ import { getEventDetailsAPI } from '../../api';
 import { ACTIONS, IEventDetailsAPI } from '../../constants';
 
 const setEventDetailsFailureAction = () => ({
-  type: ACTIONS.GET_EVENT_DETAILS_FAILURE
+  type: `${ACTIONS.GET_EVENT_DETAILS}_FAILURE`
 });
 
 const setEventDetailsLoadingAction = () => ({
-  type: ACTIONS.GET_EVENT_DETAILS_LOADING
+  type: `${ACTIONS.GET_EVENT_DETAILS}_LOADING`
 });
 
 const fetchEventDetailsSuccessAction = (payload: IEventDetailsAPI) => ({
-  type: ACTIONS.GET_EVENT_DETAILS_SUCCESS,
+  type: `${ACTIONS.GET_EVENT_DETAILS}_SUCCESS`,
   payload: payload.data
 });
 

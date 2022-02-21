@@ -1,5 +1,9 @@
 import moment from 'moment';
-import { ACTIONS, IAttendanceDetailsAction } from '../../constants';
+import {
+  ACTIONS,
+  defaultAction,
+  IAttendanceDetailsAction
+} from '../../constants';
 
 const initialState = {
   loading: false,
@@ -9,12 +13,12 @@ const initialState = {
 
 export const attendanceReducer = (
   state = initialState,
-  action: IAttendanceDetailsAction = { type: '', payload: null }
+  action: IAttendanceDetailsAction = defaultAction
 ) => {
   switch (action.type) {
-    case ACTIONS.GET_ATTENDANCE_DETAILS_LOADING:
+    case `${ACTIONS.GET_ATTENDANCE_DETAILS}_LOADING`:
       return { ...state, loading: true };
-    case ACTIONS.GET_ATTENDANCE_DETAILS_SUCCESS:
+    case `${ACTIONS.GET_ATTENDANCE_DETAILS}_SUCCESS`:
       const value = action.payload
         ? action.payload.map(({ attendance_date, start_time, end_time }) => ({
             attendanceDate: moment(attendance_date).format('DD-MM-YYYY'),
@@ -27,7 +31,7 @@ export const attendanceReducer = (
           }))
         : [];
       return { ...state, loading: false, value };
-    case ACTIONS.GET_ATTENDANCE_DETAILS_FAILURE:
+    case `${ACTIONS.GET_ATTENDANCE_DETAILS}_FAILURE`:
       return { ...state, loading: false, error: action.payload };
     default:
       return state;

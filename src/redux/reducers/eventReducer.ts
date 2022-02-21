@@ -2,6 +2,7 @@ import moment from 'moment';
 import {
   ACTIONS,
   DATE_FORMAT_CALENDAR,
+  defaultAction,
   EventType,
   IEvent,
   IEventDetailsAction
@@ -15,12 +16,12 @@ const initialState = {
 
 export const eventReducer = (
   state = initialState,
-  action: IEventDetailsAction = { type: '', payload: null }
+  action: IEventDetailsAction = defaultAction
 ) => {
   switch (action.type) {
-    case ACTIONS.GET_EVENT_DETAILS_LOADING:
+    case `${ACTIONS.GET_EVENT_DETAILS}_LOADING`:
       return { ...state, loading: true };
-    case ACTIONS.GET_EVENT_DETAILS_SUCCESS:
+    case `${ACTIONS.GET_EVENT_DETAILS}_SUCCESS`:
       let value: IEvent[] = [];
 
       action.payload?.forEach(
@@ -45,7 +46,7 @@ export const eventReducer = (
       );
 
       return { ...state, loading: false, value };
-    case ACTIONS.GET_EVENT_DETAILS_FAILURE:
+    case `${ACTIONS.GET_EVENT_DETAILS}_FAILURE`:
       return { ...state, loading: false, error: action.payload };
     default:
       return state;

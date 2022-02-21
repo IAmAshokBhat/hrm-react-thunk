@@ -3,16 +3,16 @@ import { getUserDetailsAPI } from '../../api';
 import { ACTIONS, IError, IUserInfoAPI } from '../../constants';
 
 const setUserDetailsLoadingAction = () => ({
-  type: ACTIONS.GET_USER_DETAILS_LOADING
+  type: `${ACTIONS.GET_USER_DETAILS}_LOADING`
 });
 
 const fetchUserDetailsSuccessAction = (payload: IUserInfoAPI) => ({
-  type: ACTIONS.GET_USER_DETAILS_SUCCESS,
+  type: `${ACTIONS.GET_USER_DETAILS}_SUCCESS`,
   payload: payload.data[0]
 });
 
 const fetchUsersDetailsFailureAction = (payload: IError) => ({
-  type: ACTIONS.GET_USER_DETAILS_FAILURE,
+  type: `${ACTIONS.GET_USER_DETAILS}_FAILURE`,
   payload
 });
 

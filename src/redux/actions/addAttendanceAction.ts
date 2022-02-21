@@ -7,15 +7,15 @@ import {
 } from '../../constants';
 
 const setAddAttendanceFailureAction = () => ({
-  type: ACTIONS.GET_ADD_ATTENDANCE_FAILURE
+  type: `${ACTIONS.ADD_ATTENDANCE}_FAILURE`
 });
 
 const setAddAttendanceLoadingAction = () => ({
-  type: ACTIONS.GET_ADD_ATTENDANCE_LOADING
+  type: `${ACTIONS.ADD_ATTENDANCE}_LOADING`
 });
 
 const addAttendanceSuccessAction = (payload: IAttendanceDetailsAPI) => ({
-  type: ACTIONS.GET_ADD_ATTENDANCE_SUCCESS,
+  type: `${ACTIONS.ADD_ATTENDANCE}_SUCCESS`,
   payload
 });
 

@@ -122,7 +122,7 @@ describe('Action tests', () => {
       outTime: '17:30:00'
     };
     generateActionTests(
-      ACTIONS.GET_ADD_ATTENDANCE,
+      ACTIONS.ADD_ATTENDANCE,
       actions.addAttendanceAction(newAttendance),
       api.addAttendanceAPI(newAttendance)
     );
@@ -136,7 +136,7 @@ describe('Action tests', () => {
       leaveTypeId: 1
     };
     generateActionTests(
-      ACTIONS.GET_APPLY_LEAVE,
+      ACTIONS.APPLY_LEAVE,
       actions.applyLeaveAction(newLeave),
       api.applyLeaveAPI(newLeave)
     );

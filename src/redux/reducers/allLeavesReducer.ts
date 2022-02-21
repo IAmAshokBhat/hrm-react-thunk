@@ -1,5 +1,10 @@
 import moment from 'moment';
-import { ACTIONS, DATE_FORMAT, IAllLeavesAction } from '../../constants';
+import {
+  ACTIONS,
+  DATE_FORMAT,
+  defaultAction,
+  IAllLeavesAction
+} from '../../constants';
 
 const initialState = {
   loading: false,
@@ -9,12 +14,12 @@ const initialState = {
 
 export const allLeavesReducer = (
   state = initialState,
-  action: IAllLeavesAction = { type: '', payload: null }
+  action: IAllLeavesAction = defaultAction
 ) => {
   switch (action.type) {
-    case ACTIONS.GET_ALL_LEAVES_LOADING:
+    case `${ACTIONS.GET_ALL_LEAVES}_LOADING`:
       return { ...state, loading: true };
-    case ACTIONS.GET_ALL_LEAVES_SUCCESS:
+    case `${ACTIONS.GET_ALL_LEAVES}_SUCCESS`:
       const value = action.payload
         ? action.payload.map(({ from_date, to_date, leave_type, status }) => ({
             from: moment(from_date).format(DATE_FORMAT),
@@ -25,7 +30,7 @@ export const allLeavesReducer = (
           }))
         : [];
       return { ...state, loading: false, value };
-    case ACTIONS.GET_ALL_LEAVES_FAILURE:
+    case `${ACTIONS.GET_ALL_LEAVES}_FAILURE`:
       return { ...state, loading: false, error: action.payload };
     default:
       return state;

@@ -4,17 +4,17 @@ import { ACTIONS, IAttendanceDetailsAPI } from '../../constants';
 import { generateAction } from './utils';
 
 const setAttendanceDetailsFailureAction = () => ({
-  type: ACTIONS.GET_ATTENDANCE_DETAILS_FAILURE
+  type: `${ACTIONS.GET_ATTENDANCE_DETAILS}_FAILURE`
 });
 
 const setAttendanceDetailsLoadingAction = () => ({
-  type: ACTIONS.GET_ATTENDANCE_DETAILS_LOADING
+  type: `${ACTIONS.GET_ATTENDANCE_DETAILS}_LOADING`
 });
 
 const fetchAttendanceDetailsSuccessAction = (
   payload: IAttendanceDetailsAPI
 ) => ({
-  type: ACTIONS.GET_ATTENDANCE_DETAILS_SUCCESS,
+  type: `${ACTIONS.GET_ATTENDANCE_DETAILS}_SUCCESS`,
   payload: payload.data
 });
 

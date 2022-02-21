@@ -1,4 +1,6 @@
-import { ACTIONS, IDesignationListAction } from '../../constants';
+import { ACTIONS, defaultAction } from '../../constants';
+import { TFReducer } from '../../contracts';
+import { generateReducer } from './utils';
 
 const initialState = {
   loading: false,
@@ -6,18 +8,7 @@ const initialState = {
   error: null
 };
 
-export const designationListReducer = (
+export const designationListReducer: TFReducer = (
   state = initialState,
-  action: IDesignationListAction = { type: '', payload: null }
-) => {
-  switch (action.type) {
-    case ACTIONS.GET_DESIGNATION_LIST_LOADING:
-      return { ...state, loading: true };
-    case ACTIONS.GET_DESIGNATION_LIST_SUCCESS:
-      return { ...state, loading: false, value: action.payload };
-    case ACTIONS.GET_DESIGNATION_LIST_FAILURE:
-      return { ...state, loading: false, error: action.payload };
-    default:
-      return state;
-  }
-};
+  action = defaultAction
+) => generateReducer(state, action, ACTIONS.GET_DESIGNATION_LIST);
