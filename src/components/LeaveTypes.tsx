@@ -9,16 +9,17 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { ILeaveBalance } from '../constants';
 import { fetchLeaveBalanceAction } from '../redux/actions';
-import { selectLeaveBalance, selectLoginDetails } from '../redux/selectors';
+import { selectLeaveBalance } from '../redux/selectors';
+import { getUserId } from '../utils';
 
 export const LeaveTypes = () => {
   const dispatch = useDispatch();
   const leaveBalance: ILeaveBalance[] = useSelector(selectLeaveBalance);
-  const loginDetails = useSelector(selectLoginDetails);
+  const loggedInUser = getUserId();
 
   useEffect(() => {
-    dispatch(fetchLeaveBalanceAction(loginDetails.userId));
-  }, [dispatch, loginDetails]);
+    dispatch(fetchLeaveBalanceAction(loggedInUser));
+  }, [dispatch, loggedInUser]);
 
   return (
     <TableContainer component={Paper}>

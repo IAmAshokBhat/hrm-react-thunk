@@ -4,6 +4,7 @@ import {
   INewLeave,
   IRegisterAPI
 } from './constants';
+import { IDetailsAPIReq, IDetailsAPIReqWithDates } from './contracts';
 import { fetchWithToken, getToken } from './utils';
 
 const headers = {
@@ -13,19 +14,23 @@ const API_URL = process.env.REACT_APP_API_URL;
 
 export const getUserListAPI = () => fetchWithToken('user/list');
 
-export const getUserDetailsAPI = (id: number) =>
+export const getUserDetailsAPI = ({ id }: IDetailsAPIReq) =>
   fetchWithToken(`${API_URL}api/users/${id}`);
 
-export const getAttendanceDetailsAPI = (id: number, from: string, to: string) =>
+export const getAttendanceDetailsAPI = ({
+  id,
+  from,
+  to
+}: IDetailsAPIReqWithDates) =>
   fetchWithToken(`${API_URL}api/attendance/${id}?from=${from}&to=${to}`);
 
-export const getLeaveBalanceAPI = (id: number) =>
+export const getLeaveBalanceAPI = ({ id }: IDetailsAPIReq) =>
   fetchWithToken(`${API_URL}api/leaves/${id}`);
 
-export const getEventDetailsAPI = (id: number, from: string, to: string) =>
+export const getEventDetailsAPI = ({ id, from, to }: IDetailsAPIReqWithDates) =>
   fetchWithToken(`${API_URL}api/events/${id}?from=${from}&to=${to}`);
 
-export const getAllLeavesAPI = (id: number) =>
+export const getAllLeavesAPI = ({ id }: IDetailsAPIReq) =>
   fetchWithToken(`${API_URL}api/all-leaves/${id}`);
 
 export const applyLeaveAPI = (newLeave: INewLeave) =>

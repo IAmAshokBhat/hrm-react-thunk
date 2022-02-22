@@ -27,3 +27,13 @@ export type TFGenerateReducer = (
   action: IGenericAction,
   actionName: string
 ) => TAnyObject;
+
+export interface IDetailsAPIReqWithDates {
+  id: number;
+  from: string;
+  to: string;
+}
+
+export interface IDetailsAPIReq {
+  id: number;
+}

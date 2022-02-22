@@ -17,21 +17,21 @@ import {
 import {
   selectAllLeaves,
   selectLeaveBalance,
-  selectLeaveCountsByMonth,
-  selectLoginDetails
+  selectLeaveCountsByMonth
 } from '../redux/selectors';
+import { getUserId } from '../utils';
 
 export const Leaves = () => {
   const dispatch = useDispatch();
-  const loginDetails = useSelector(selectLoginDetails);
+  const loggedInUser = getUserId();
   const holidayTaken = useSelector(selectLeaveCountsByMonth);
   const leaveData = useSelector(selectAllLeaves);
   const leaveBalance = useSelector(selectLeaveBalance);
 
   useEffect(() => {
-    dispatch(fetchAllLeavesAction(loginDetails.userId));
-    dispatch(fetchLeaveBalanceAction(loginDetails.userId));
-  }, [dispatch, loginDetails]);
+    dispatch(fetchAllLeavesAction(loggedInUser));
+    dispatch(fetchLeaveBalanceAction(loggedInUser));
+  }, [dispatch, loggedInUser]);
 
   return (
     <Grid container spacing={2}>

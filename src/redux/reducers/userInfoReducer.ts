@@ -17,7 +17,8 @@ export const userInfoReducer = (
       let value = {};
       if (action.payload) {
         // eslint-disable-next-line
-        const { user_id, name, designation, manager, email } = action.payload;
+        const { user_id, name, designation, manager, email } =
+          action.payload[0];
         value = { userId: user_id, name, designation, manager, email };
       }
 

@@ -11,6 +11,7 @@ import {
 } from '@mui/material';
 import Dialog from '@mui/material/Dialog';
 import moment from 'moment';
+import { useSnackbar } from 'notistack';
 import { useEffect, useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
@@ -24,12 +25,8 @@ import {
   NotificationType
 } from '../constants';
 import { applyLeaveAction, fetchLeaveBalanceAction } from '../redux/actions';
-import {
-  selectApplyLeave,
-  selectLeaveBalance,
-  selectLoginDetails
-} from '../redux/selectors';
-import { useSnackbar } from 'notistack';
+import { selectApplyLeave, selectLeaveBalance } from '../redux/selectors';
+import { getUserId } from '../utils';
 
 interface IProps {
   open: boolean;
@@ -45,14 +42,10 @@ export const ApplyLeave = ({ open, onClose }: IProps) => {
     today.getMonth(),
     today.getDate() + 1
   );
-  const dayAfter = new Date(
-    today.getFullYear(),
-    today.getMonth(),
-    today.getDate() + 2
-  );
+
   const leaveBalance: ILeaveBalance[] = useSelector(selectLeaveBalance);
   const applyLeaveStatus = useSelector(selectApplyLeave);
-  const loginDetails = useSelector(selectLoginDetails);
+  const loggedInUser = getUserId();
 
   const options: ISelectLeaveType[] = leaveBalance.map(
     ({ leaveType, leaveTypeId, balance }) => ({
@@ -63,7 +56,7 @@ export const ApplyLeave = ({ open, onClose }: IProps) => {
   );
 
   const [startDate, setStartDate] = useState<Date | null>(tomorrow);
-  const [endDate, setEndDate] = useState<Date | null>(dayAfter);
+  const [endDate, setEndDate] = useState<Date | null>(tomorrow);
   const [selectedLeaveType, setLeaveType] = useState<ISelectLeaveType | null>(
     null
   );
@@ -71,7 +64,7 @@ export const ApplyLeave = ({ open, onClose }: IProps) => {
   const onSubmit = async () => {
     if (selectedLeaveType) {
       const newLeave: INewLeave = {
-        userId: 5,
+        userId: loggedInUser,
         leaveTypeId: selectedLeaveType.value,
         fromDate: moment(startDate).format(DATE_FORMAT_CALENDAR),
         toDate: moment(endDate).format(DATE_FORMAT_CALENDAR)
@@ -81,7 +74,7 @@ export const ApplyLeave = ({ open, onClose }: IProps) => {
   };
 
   useEffect(() => {
-    dispatch(fetchLeaveBalanceAction(loginDetails.userId));
+    dispatch(fetchLeaveBalanceAction(loggedInUser));
     if (applyLeaveStatus.message) {
       enqueueSnackbar(applyLeaveStatus.message, {
         variant: applyLeaveStatus.status
@@ -89,12 +82,13 @@ export const ApplyLeave = ({ open, onClose }: IProps) => {
           : NotificationType.ERROR
       });
     }
-  }, [dispatch, applyLeaveStatus, enqueueSnackbar, loginDetails]);
+  }, [dispatch, applyLeaveStatus, enqueueSnackbar, loggedInUser]);
 
   const isFormInvalid =
     !selectedLeaveType ||
-    moment(endDate).isBefore(moment(startDate)) ||
+    !moment(endDate).isSameOrAfter(moment(startDate)) ||
     !selectedLeaveType.balance;
+
   return (
     <Dialog
       open={open}
@@ -149,7 +143,7 @@ export const ApplyLeave = ({ open, onClose }: IProps) => {
                             selectsEnd
                             startDate={startDate}
                             endDate={endDate}
-                            minDate={moment(startDate).add(1, 'day').toDate()}
+                            minDate={startDate}
                             withPortal
                             customInput={
                               <TextField

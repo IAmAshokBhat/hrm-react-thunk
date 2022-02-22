@@ -134,7 +134,7 @@ export interface IUserListAction extends IAction {
 }
 
 export interface IUserInfoAction extends IAction {
-  payload: IUserInfoDataAPI | null;
+  payload: IUserInfoDataAPI[] | null;
 }
 
 export interface ILeaveBalanceAction extends IAction {

@@ -1,33 +1,12 @@
 import { Dispatch } from 'redux';
 import { getEventDetailsAPI } from '../../api';
-import { ACTIONS, IEventDetailsAPI } from '../../constants';
-
-const setEventDetailsFailureAction = () => ({
-  type: `${ACTIONS.GET_EVENT_DETAILS}_FAILURE`
-});
-
-const setEventDetailsLoadingAction = () => ({
-  type: `${ACTIONS.GET_EVENT_DETAILS}_LOADING`
-});
-
-const fetchEventDetailsSuccessAction = (payload: IEventDetailsAPI) => ({
-  type: `${ACTIONS.GET_EVENT_DETAILS}_SUCCESS`,
-  payload: payload.data
-});
+import { ACTIONS } from '../../constants';
+import { generateAction } from './utils';
 
 export const fetchEventDetailsAction =
-  (id: number, from: string, to: string) => (dispatch: Dispatch) => {
-    dispatch(setEventDetailsLoadingAction());
-    return getEventDetailsAPI(id, from, to)
-      .then(
-        (response) => response.json(),
-        (error) => console.log('An error occurred.', error)
-      )
-      .then((json) => {
-        const { ok } = json;
-        if (!ok) {
-          dispatch(setEventDetailsFailureAction());
-        }
-        dispatch(fetchEventDetailsSuccessAction(json));
-      });
-  };
+  (id: number, from: string, to: string) => (dispatch: Dispatch) =>
+    generateAction(ACTIONS.GET_EVENT_DETAILS, dispatch, getEventDetailsAPI, {
+      id,
+      from,
+      to
+    });

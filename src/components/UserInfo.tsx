@@ -5,14 +5,13 @@ import Grid from '@mui/material/Grid';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchUserDetailsAction } from '../redux/actions';
 import { useEffect } from 'react';
-import { selectLoginDetails, selectUserInfo } from '../redux/selectors';
+import { selectUserInfo } from '../redux/selectors';
+import { getUserId } from '../utils';
 
 export const UserInfo = () => {
   const dispatch = useDispatch();
-
+  const loggedInUser = getUserId();
   const userInfo = useSelector(selectUserInfo);
-
-  const loginDetails = useSelector(selectLoginDetails);
 
   let userDetails = {
     name: '',
@@ -34,8 +33,8 @@ export const UserInfo = () => {
   }
 
   useEffect(() => {
-    dispatch(fetchUserDetailsAction(loginDetails.userId));
-  }, [dispatch, loginDetails]);
+    dispatch(fetchUserDetailsAction(loggedInUser));
+  }, [dispatch, loggedInUser]);
 
   return (
     <Card style={{ padding: 15 }}>

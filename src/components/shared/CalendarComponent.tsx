@@ -6,20 +6,19 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchEventDetailsAction } from '../../redux/actions';
 import { DATE_FORMAT_CALENDAR, EventType, IEvent } from '../../constants';
-import { selectLoginDetails, selectMonthlyEvents } from '../../redux/selectors';
+import { selectMonthlyEvents } from '../../redux/selectors';
+import { getUserId } from '../../utils';
 
 export const CalendarComponent = () => {
   const localizer = momentLocalizer(moment);
   const dispatch = useDispatch();
   const startOfMonth = moment().startOf('month').format(DATE_FORMAT_CALENDAR);
   const endOfMonth = moment().endOf('month').format(DATE_FORMAT_CALENDAR);
-  const loginDetails = useSelector(selectLoginDetails);
+  const loggedInUser = getUserId();
 
   useEffect(() => {
-    dispatch(
-      fetchEventDetailsAction(loginDetails.userId, startOfMonth, endOfMonth)
-    );
-  }, [dispatch, startOfMonth, endOfMonth, loginDetails]);
+    dispatch(fetchEventDetailsAction(loggedInUser, startOfMonth, endOfMonth));
+  }, [dispatch, startOfMonth, endOfMonth, loggedInUser]);
 
   const eventList = useSelector(selectMonthlyEvents);
 

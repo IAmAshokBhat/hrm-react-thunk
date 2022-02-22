@@ -5,16 +5,19 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from 'recharts';
 import { fetchAttendanceDetailsAction } from '../../redux/actions';
 import moment from 'moment';
 import { selectWeeklyAttendance } from '../../redux/selectors';
+import { getUserId } from '../../utils';
 
 export const WeeklyAttendance = () => {
   const dispatch = useDispatch();
-
+  const loggedInUser = getUserId();
   const startOfWeek = moment().startOf('isoWeek').format('yyyy-MM-DD');
   const endOfWeek = moment().endOf('week').format('yyyy-MM-DD');
 
   useEffect(() => {
-    dispatch(fetchAttendanceDetailsAction(5, startOfWeek, endOfWeek));
-  }, [dispatch, startOfWeek, endOfWeek]);
+    dispatch(
+      fetchAttendanceDetailsAction(loggedInUser, startOfWeek, endOfWeek)
+    );
+  }, [dispatch, startOfWeek, endOfWeek, loggedInUser]);
 
   const weeklyAttendance = useSelector(selectWeeklyAttendance);
 

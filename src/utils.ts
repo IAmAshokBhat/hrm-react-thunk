@@ -5,6 +5,8 @@ export const isValidToken = () => {
 
 export const getToken = () => localStorage.getItem('userToken') || '';
 
+export const getUserId = () => Number(localStorage.getItem('userId')) || -1;
+
 interface IRequestOptions {
   method?: string;
   headers?: HeadersInit;
