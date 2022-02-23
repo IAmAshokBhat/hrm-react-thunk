@@ -16,9 +16,9 @@ function App() {
   const [openAttendanceDialog, setOpenAttendanceDialog] = useState(false);
   const [openLeaveDialog, setOpenLeaveDialog] = useState(false);
 
-  const handleOpen = () => setOpen(true);
+  const handleSpeedDialOpen = () => setOpen(true);
 
-  const handleClose = () => setOpen(false);
+  const handleSpeedDialClose = () => setOpen(false);
 
   const handleAddAttendance = () => setOpenAttendanceDialog(true);
 
@@ -49,9 +49,10 @@ function App() {
               ariaLabel="All Actions Of Leave Management System"
               sx={{ position: 'absolute', bottom: 35, right: 128 }}
               icon={<SpeedDialIcon />}
-              onClose={handleClose}
-              onOpen={handleOpen}
+              onClose={handleSpeedDialClose}
+              onOpen={handleSpeedDialOpen}
               open={open}
+              data-testid="action-component"
             >
               {actions.map(({ name, icon, onAction }) => (
                 <SpeedDialAction

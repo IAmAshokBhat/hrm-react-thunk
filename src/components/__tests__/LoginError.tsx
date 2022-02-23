@@ -23,20 +23,17 @@ jest.mock('notistack', () => ({
   }
 }));
 
-const loginResponse = {
-  ok: true,
+const errorLoginResponse = {
+  ok: false,
   body: {
-    token: 'token',
-    issued: 1644407868611,
-    expires: 1644408768611,
-    userId: '5',
-    loginStatus: 1,
-    message: 'success',
-    status: 200
-  }
+    loginStatus: 0,
+    message: 'Invalid username/password',
+    status: 400
+  },
+  status: 400
 };
 
-describe('Login Page', () => {
+describe('Login Page error', () => {
   const generateNode = (
     initialStoreState: TAnyObject = defaultState,
     route = '/login'
@@ -52,37 +49,35 @@ describe('Login Page', () => {
       }
     );
 
-  it('should render and match snapshot', () => {
-    const { container } = generateNode();
-
-    expect(container).toMatchSnapshot();
-  });
-
-  it('should login when valid username and password is entered', async () => {
+  it('should throw error when invalid username/password is entered', async () => {
     const loginActionSpy = jest.spyOn(Actions, 'loginAction');
 
-    mockAPICall(loginAPI, loginResponse);
+    mockAPICall(loginAPI, errorLoginResponse);
 
     generateNode();
 
     userEvent.type(screen.getByPlaceholderText(/User Id/i), '5');
-    userEvent.type(screen.getByPlaceholderText(/Password/i), 'I@mCrazy');
+    userEvent.type(
+      screen.getByPlaceholderText(/Password/i),
+      'invalid-password'
+    );
     await waitFor(() =>
       userEvent.click(screen.getByRole('button', { name: 'Login' }))
     );
 
     await waitFor(() =>
       expect(loginActionSpy).toHaveBeenCalledWith({
-        password: 'I@mCrazy',
+        password: 'invalid-password',
         userId: '5'
       })
     );
 
     await waitFor(() =>
       expect(loginAPI).toHaveBeenCalledWith({
-        password: 'I@mCrazy',
+        password: 'invalid-password',
         userId: '5'
       })
     );
+    expect(mockEnqueue).toHaveBeenCalled();
   });
 });

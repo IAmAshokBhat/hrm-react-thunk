@@ -1,4 +1,3 @@
-// import { screen, waitFor, within } from '@testing-library/react';
 import { getAttendanceDetailsAPI, getEventDetailsAPI } from '../../api';
 import { TAnyObject } from '../../constants';
 import { mockAPICall, renderWithProvider } from '../../testUtils';

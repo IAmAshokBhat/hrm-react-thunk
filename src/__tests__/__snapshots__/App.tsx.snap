@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component should render and match snapshot 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <header
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-hip9hq-MuiPaper-root-MuiAppBar-root"
+    >
+      <div
+        class="MuiContainer-root MuiContainer-maxWidthXl css-19r6kue-MuiContainer-root"
+      >
+        <div
+          class="MuiToolbar-root MuiToolbar-regular css-1cndkqf-MuiToolbar-root"
+        >
+          <div
+            class="MuiTypography-root MuiTypography-h6 MuiTypography-noWrap css-1083xa6-MuiTypography-root"
+          >
+            <a
+              aria-current="page"
+              class="active"
+              data-testid="logo-icon"
+              href="/dashboard"
+              style="display: block; margin: 0px; color: white; text-decoration: underline; font-weight: 600;"
+            >
+              <svg
+                fill="white"
+                height="75px"
+                width="75px"
+              >
+                logo1.svg
+              </svg>
+            </a>
+          </div>
+          <div
+            class="MuiTypography-root MuiTypography-h6 MuiTypography-noWrap css-h7cdpm-MuiTypography-root"
+          >
+            LOGO
+          </div>
+        </div>
+      </div>
+    </header>
+    <body
+      style="margin: 20px auto; max-width: 1536px;"
+    />
+    <div>
+      <div
+        class="MuiTypography-root MuiTypography-overline css-b3fch5-MuiTypography-root"
+        style="text-align: center; bottom: 0px; width: 100%;"
+      >
+        ©Copyright Ashok H Bhat 2022
+      </div>
+    </div>
+  </div>
+</div>
+`;

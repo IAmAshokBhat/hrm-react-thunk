@@ -227,7 +227,7 @@ export const allLeavesAPIResponse: IAllLeavesAPI = {
       from_date: '2022-02-22',
       to_date: '2022-02-23',
       leave_type: 'Earned Leave',
-      status: 0
+      status: 1
     }
   ]
 };

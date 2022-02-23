@@ -35,7 +35,7 @@ describe('Action tests', () => {
     generateActionTests(
       ACTIONS.GET_ALL_LEAVES,
       actions.fetchAllLeavesAction(1),
-      api.getAllLeavesAPI(1)
+      api.getAllLeavesAPI({ id: 1 })
     );
   });
 
@@ -43,7 +43,11 @@ describe('Action tests', () => {
     generateActionTests(
       ACTIONS.GET_ATTENDANCE_DETAILS,
       actions.fetchAttendanceDetailsAction(1, '01-01-2022', '31-01-2022'),
-      api.getAttendanceDetailsAPI(1, '01-01-2022', '31-01-2022')
+      api.getAttendanceDetailsAPI({
+        id: 1,
+        from: '01-01-2022',
+        to: '31-01-2022'
+      })
     );
   });
 
@@ -51,7 +55,11 @@ describe('Action tests', () => {
     generateActionTests(
       ACTIONS.GET_EVENT_DETAILS,
       actions.fetchEventDetailsAction(1, '01-01-2022', '31-01-2022'),
-      api.getEventDetailsAPI(1, '01-01-2022', '31-01-2022')
+      api.getEventDetailsAPI({
+        id: 1,
+        from: '01-01-2022',
+        to: '31-01-2022'
+      })
     );
   });
 
@@ -59,7 +67,7 @@ describe('Action tests', () => {
     generateActionTests(
       ACTIONS.GET_LEAVE_BALANCE,
       actions.fetchLeaveBalanceAction(1),
-      api.getLeaveBalanceAPI(1)
+      api.getLeaveBalanceAPI({ id: 1 })
     );
   });
 
@@ -67,7 +75,7 @@ describe('Action tests', () => {
     generateActionTests(
       ACTIONS.GET_USER_DETAILS,
       actions.fetchUserDetailsAction(1),
-      api.getUserDetailsAPI(1)
+      api.getUserDetailsAPI({ id: 1 })
     );
   });
 
@@ -79,7 +87,7 @@ describe('Action tests', () => {
     );
   });
 
-  it.only('Login action test', async () => {
+  it('Login action test', async () => {
     const userInfo = { userId: 1, password: 'password' };
     const actionPayload = {
       token: 'token',

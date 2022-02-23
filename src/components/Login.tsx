@@ -29,7 +29,7 @@ export const LoginPage = () => {
   };
 
   useEffect(() => {
-    if (loginDetails.message) {
+    if (loginDetails && loginDetails.message) {
       enqueueSnackbar(loginDetails.message, {
         variant: NotificationType.ERROR
       });

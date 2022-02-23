@@ -138,7 +138,7 @@ export const mockAPICall = (func: TFApiCall, response: IResponseMock) =>
 export const generateActionTests = async (
   actionName: string,
   action: TFAction,
-  api: TAny, // TODO: Find a better way
+  api: TAny,
   actionPayload: TAny = []
 ) => {
   const response = new ResponseMock({ ok: true, body: { data: [] } });

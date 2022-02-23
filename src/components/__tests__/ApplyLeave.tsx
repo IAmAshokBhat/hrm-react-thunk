@@ -1,4 +1,3 @@
-// import { screen, waitFor, within } from '@testing-library/react';
 import { screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { SnackbarProvider } from 'notistack';
@@ -7,6 +6,7 @@ import { TAnyObject } from '../../constants';
 import { mockAPICall, renderWithProvider } from '../../testUtils';
 import { ApplyLeave } from '../ApplyLeave';
 import { defaultState, leaveBalanceAPIResponse } from './fixtures';
+import * as utils from '../../utils';
 
 jest.mock('../../api', () => ({
   applyLeaveAPI: jest.fn(),
@@ -44,6 +44,8 @@ describe('Apply Leave component', () => {
     );
 
   beforeEach(() => {
+    //@ts-ignore
+    utils.getUserId = jest.fn().mockReturnValue(5);
     mockAPICall(applyLeaveAPI, applyLeaveResponse);
     mockAPICall(getLeaveBalanceAPI, leaveBalanceResponse);
   });

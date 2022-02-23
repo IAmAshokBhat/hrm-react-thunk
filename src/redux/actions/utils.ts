@@ -24,10 +24,7 @@ export const generateAction = (
 ) => {
   dispatch(setLoadingAction(actionName));
   return api(payload)
-    .then(
-      (response) => response.json(),
-      (error) => console.log('An error occurred.', error)
-    )
+    .then((response) => response.json())
     .then((json) => {
       dispatch(fetchSuccessAction(actionName, json, reqCmpltPayload));
     });

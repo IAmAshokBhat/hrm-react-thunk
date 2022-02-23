@@ -1,18 +1,16 @@
-// import { screen, waitFor, within } from '@testing-library/react';
+import { screen, waitFor } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { SnackbarProvider } from 'notistack';
+import { getDesignationListAPI, getUserListAPI, registerAPI } from '../../api';
 import { TAnyObject } from '../../constants';
+import * as Actions from '../../redux/actions/registerAction';
 import { mockAPICall, renderWithProvider } from '../../testUtils';
+import { RegistrationPage } from '../RegistrationPage';
 import {
   defaultState,
   designationListAPIResponse,
-  userListAPIResponse,
   userListState
 } from './fixtures';
-import { RegistrationPage } from '../RegistrationPage';
-import { SnackbarProvider } from 'notistack';
-import { registerAPI, getDesignationListAPI, getUserListAPI } from '../../api';
-import { screen, waitFor } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
-import * as Actions from '../../redux/actions/registerAction';
 
 jest.mock('../../api', () => ({
   registerAPI: jest.fn(),
@@ -35,7 +33,7 @@ describe('Registration Page', () => {
   beforeEach(() => {
     mockAPICall(registerAPI, {
       ok: true,
-      body: { data: [], message: 'success', status: 1 }
+      body: { data: [], message: 'success', status: 200 }
     });
     mockAPICall(getDesignationListAPI, {
       ok: true,
@@ -43,7 +41,7 @@ describe('Registration Page', () => {
     });
     mockAPICall(getUserListAPI, {
       ok: true,
-      body: userListAPIResponse
+      body: userListState
     });
   });
 

@@ -103,6 +103,29 @@ describe('Reducer tests', () => {
   );
 
   generateReducerTests(
+    'leaveCountByMonthReducer',
+    leaveCountByMonthReducer,
+    selectLeaveCountsByMonthState,
+    ACTIONS.GET_ALL_LEAVES,
+    [{ from_date: '2022-01-01', to_date: '2022-02-02' }],
+    undefined,
+    {
+      Jan: 31,
+      Feb: 2,
+      Mar: 0,
+      Apr: 0,
+      May: 0,
+      Jun: 0,
+      Jul: 0,
+      Aug: 0,
+      Sep: 0,
+      Oct: 0,
+      Nov: 0,
+      Dec: 0
+    }
+  );
+
+  generateReducerTests(
     'loginReducer',
     loginReducer,
     selectLoginDetailsState,
@@ -129,7 +152,15 @@ describe('Reducer tests', () => {
     userInfoReducer,
     selectUserInfoState,
     ACTIONS.GET_USER_DETAILS,
-    null,
+    [
+      {
+        user_id: 1,
+        name: 'Tom',
+        designation: 'Manager',
+        manager: 'Jerry',
+        email: 'tom@jerry.com'
+      }
+    ],
     null
   );
 
