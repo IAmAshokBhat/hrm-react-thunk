@@ -1,18 +1,14 @@
 import {
+  API_URL,
   ILoginData,
   INewAttendance,
   INewLeave,
   IRegisterAPI
 } from './constants';
 import { IDetailsAPIReq, IDetailsAPIReqWithDates } from './contracts';
-import { fetchWithToken, getToken } from './utils';
+import { fetchWithToken } from './utils';
 
-const headers = {
-  'X-JWT-Token': getToken()
-};
-const API_URL = process.env.REACT_APP_API_URL;
-
-export const getUserListAPI = () => fetchWithToken('user/list');
+export const getUserListAPI = () => fetchWithToken(`${API_URL}user/list`);
 
 export const getUserDetailsAPI = ({ id }: IDetailsAPIReq) =>
   fetchWithToken(`${API_URL}api/users/${id}`);
@@ -52,7 +48,7 @@ export const loginAPI = (userInfo: ILoginData) =>
   });
 
 export const getDesignationListAPI = () =>
-  fetchWithToken(`${API_URL}designation`, { headers: headers });
+  fetchWithToken(`${API_URL}designation`);
 
 export const registerAPI = (newUser: IRegisterAPI) =>
   fetchWithToken(`${API_URL}user`, {

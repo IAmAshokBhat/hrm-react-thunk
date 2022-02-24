@@ -316,3 +316,7 @@ export type TAnyObject = { [key: string]: any }; // eslint-disable-line @typescr
 export type TAny = any; // eslint-disable-line @typescript-eslint/no-explicit-any
 
 export const defaultAction = { type: '', payload: null };
+
+export const API_URL = process.env.REACT_APP_API_URL;
+
+export const defaultHeaders = { headers: { 'X-JWT-Token': undefined } };
