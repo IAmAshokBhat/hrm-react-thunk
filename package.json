@@ -42,8 +42,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "test:coverage": "yarn test --coverage",
+    "test": "react-scripts test --env=jsdom --modulePaths=src/",
+    "test:coverage": "yarn test --coverage --watchAll",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",
     "format": "prettier --write 'src/**/*.{ts,tsx,scss,css,json}'",
@@ -87,5 +87,27 @@
     "prettier": "2.5.1",
     "prettier-eslint": "13.0.0",
     "prettier-eslint-cli": "5.0.1"
+  },
+  "jest": {
+    "watchPathIgnorePatterns": ["__ignore_tests__", "fixtures", "fixtures.ts"],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/node_modules/",
+      "!src/index.tsx",
+      "!src/contracts.ts",
+      "!src/constants.ts",
+      "!src/reportWebVitals.ts",
+      "!src/utils.ts",
+      "!src/react-app-env.d.ts",
+      "!src/testUtils.tsx"
+    ]
+   },
+   "coverageThreshold": {
+    "global": {
+      "branches": 75,
+      "functions": 90,
+      "lines": 90,
+      "statements": 90
+    }
   }
 }
