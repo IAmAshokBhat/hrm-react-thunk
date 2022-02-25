@@ -3,8 +3,13 @@ This is a HR management project
 It is built using *React 17.0.2* , *Redux 4.1.2*,  *thunk 2.4.1* and *material UI 5.0*.  
 It consumes data from one of my other project  developed using Node.js and MySQL
 
+**Scripts Available:**
+1) To install dependencies: **`yarn`**
+2) To run the project: **`yarn start`**
+3) To run unti test cases and get coverage report: **`yarn test:coverage`**
+
 Test Coverage Report:
-----------------------------|---------|----------|---------|---------|-------------------
+
 File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------------------------|---------|----------|---------|---------|-------------------
 All files                   |   98.27 |    79.08 |   96.51 |   98.38 |                   
@@ -59,4 +64,4 @@ All files                   |   98.27 |    79.08 |   96.51 |   98.38 |
   userInfoReducer.ts        |     100 |     87.5 |     100 |     100 | 11                
   userListReducer.ts        |     100 |       50 |     100 |     100 | 13                
   utils.ts                  |     100 |      100 |     100 |     100 |                   
-----------------------------|---------|----------|---------|---------|-------------------
+
