@@ -1,10 +1,10 @@
+import { API_URL } from './constants';
 import {
-  API_URL,
   ILoginData,
   INewAttendance,
   INewLeave,
   IRegisterAPI
-} from './constants';
+} from './contracts';
 import { IDetailsAPIReq, IDetailsAPIReqWithDates } from './contracts';
 import { fetchWithToken } from './utils';
 

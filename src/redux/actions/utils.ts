@@ -1,6 +1,5 @@
 import { Dispatch } from 'redux';
-import { TAnyObject } from '../../constants';
-import { TFPromise } from '../../contracts';
+import { TFPromise, TAnyObject } from '../../contracts';
 
 const setLoadingAction = (actionName: string) => ({
   type: `${actionName}_LOADING`

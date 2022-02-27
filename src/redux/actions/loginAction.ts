@@ -1,6 +1,7 @@
 import { Dispatch } from 'redux';
 import { loginAPI } from '../../api';
-import { ACTIONS, ILoginAPI, ILoginData } from '../../constants';
+import { ACTIONS } from '../../constants';
+import { ILoginAPI, ILoginData } from '../../contracts';
 
 const setLoginFailureAction = () => ({
   type: ACTIONS.LOGIN_FAILURE

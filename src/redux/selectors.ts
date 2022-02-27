@@ -1,4 +1,4 @@
-import { IDefaultRoot } from '../constants';
+import { IDefaultRoot } from '../contracts';
 
 export const selectUserInfo = (state: IDefaultRoot) => state.userInfo.value;
 

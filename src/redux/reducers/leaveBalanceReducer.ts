@@ -1,9 +1,5 @@
-import {
-  ACTIONS,
-  defaultAction,
-  ILeaveBalance,
-  ILeaveBalanceAction
-} from '../../constants';
+import { ACTIONS, defaultAction } from '../../constants';
+import { ILeaveBalance, ILeaveBalanceAction } from '../../contracts';
 
 const initialState = {
   loading: false,

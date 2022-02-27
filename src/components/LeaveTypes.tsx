@@ -7,7 +7,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { ILeaveBalance } from '../constants';
+import { ILeaveBalance } from '../contracts';
 import { fetchLeaveBalanceAction } from '../redux/actions';
 import { selectLeaveBalance } from '../redux/selectors';
 import { getUserId } from '../utils';

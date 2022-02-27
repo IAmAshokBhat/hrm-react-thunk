@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { applyMiddleware, createStore, Store } from 'redux';
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import { IDefaultRoot, TAny, TAnyObject } from './constants';
+import { IDefaultRoot, TAny, TAnyObject } from './contracts';
 import { TFAction } from './contracts';
 import { reducers } from './redux/reducers';
 import {

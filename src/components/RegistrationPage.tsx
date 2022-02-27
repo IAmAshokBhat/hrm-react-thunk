@@ -8,12 +8,8 @@ import Typography from '@mui/material/Typography';
 import { useEffect, useState } from 'react';
 import { Field, Form } from 'react-final-form';
 import { useDispatch, useSelector } from 'react-redux';
-import {
-  ILabelValue,
-  IRegisterAPI,
-  IRegistration,
-  NotificationType
-} from '../constants';
+import { NotificationType } from '../constants';
+import { ILabelValue, IRegisterAPI, IRegistration } from '../contracts';
 import {
   fetchDesignationListAction,
   fetchUsersAction,

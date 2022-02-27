@@ -3,10 +3,9 @@ import {
   ACTIONS,
   DATE_FORMAT_CALENDAR,
   defaultAction,
-  EventType,
-  IEvent,
-  IEventDetailsAction
+  EventType
 } from '../../constants';
+import { IEvent, IEventDetailsAction } from '../../contracts';
 
 const initialState = {
   loading: false,

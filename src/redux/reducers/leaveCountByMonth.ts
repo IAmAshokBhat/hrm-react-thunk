@@ -1,11 +1,10 @@
 import moment from 'moment';
+import { ACTIONS, defaultAction } from '../../constants';
 import {
-  ACTIONS,
-  defaultAction,
   IAllLeavesAction,
   IKeyValue,
   ILeaveCountByMonth
-} from '../../constants';
+} from '../../contracts';
 
 const initialState = {
   loading: false,

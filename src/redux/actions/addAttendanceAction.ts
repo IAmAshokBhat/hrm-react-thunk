@@ -1,6 +1,7 @@
 import { Dispatch } from 'redux';
 import { addAttendanceAPI } from '../../api';
-import { ACTIONS, INewAttendance } from '../../constants';
+import { ACTIONS } from '../../constants';
+import { INewAttendance } from '../../contracts';
 import { generateAction } from './utils';
 
 export const addAttendanceAction =

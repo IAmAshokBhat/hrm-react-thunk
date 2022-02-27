@@ -1,10 +1,6 @@
 import moment from 'moment';
-import {
-  ACTIONS,
-  DATE_FORMAT,
-  defaultAction,
-  IAllLeavesAction
-} from '../../constants';
+import { ACTIONS, DATE_FORMAT, defaultAction } from '../../constants';
+import { IAllLeavesAction } from '../../contracts';
 
 const initialState = {
   loading: false,

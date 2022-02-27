@@ -1,6 +1,7 @@
 import { Dispatch } from 'redux';
 import { registerAPI } from '../../api';
-import { ACTIONS, IRegisterAPI } from '../../constants';
+import { ACTIONS } from '../../constants';
+import { IRegisterAPI } from '../../contracts';
 import { generateAction } from './utils';
 
 export const registerAction = (newUser: IRegisterAPI) => (dispatch: Dispatch) =>

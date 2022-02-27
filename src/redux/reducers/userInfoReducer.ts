@@ -1,4 +1,5 @@
-import { ACTIONS, defaultAction, IUserInfoAction } from '../../constants';
+import { ACTIONS, defaultAction } from '../../constants';
+import { IUserInfoAction } from '../../contracts';
 
 const initialState = {
   loading: false,

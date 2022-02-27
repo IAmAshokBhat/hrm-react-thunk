@@ -1,9 +1,6 @@
 import moment from 'moment';
-import {
-  ACTIONS,
-  defaultAction,
-  IAttendanceDetailsAction
-} from '../../constants';
+import { ACTIONS, defaultAction } from '../../constants';
+import { IAttendanceDetailsAction } from '../../contracts';
 
 const initialState = {
   loading: false,

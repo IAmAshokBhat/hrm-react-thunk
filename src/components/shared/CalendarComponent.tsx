@@ -5,7 +5,8 @@ import 'react-big-calendar/lib/css/react-big-calendar.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchEventDetailsAction } from '../../redux/actions';
-import { DATE_FORMAT_CALENDAR, EventType, IEvent } from '../../constants';
+import { DATE_FORMAT_CALENDAR, EventType } from '../../constants';
+import { IEvent } from '../../contracts';
 import { selectMonthlyEvents } from '../../redux/selectors';
 import { getUserId } from '../../utils';
 

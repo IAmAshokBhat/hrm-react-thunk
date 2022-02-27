@@ -14,11 +14,8 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { Field, Form } from 'react-final-form';
 import { useDispatch, useSelector } from 'react-redux';
-import {
-  DATE_FORMAT_CALENDAR,
-  INewAttendance,
-  NotificationType
-} from '../constants';
+import { DATE_FORMAT_CALENDAR, NotificationType } from '../constants';
+import { INewAttendance } from '../contracts';
 import { addAttendanceAction } from '../redux/actions';
 import { selectAddAttendance } from '../redux/selectors';
 import { useSnackbar } from 'notistack';

@@ -17,13 +17,8 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { Field, Form } from 'react-final-form';
 import { useDispatch, useSelector } from 'react-redux';
-import {
-  DATE_FORMAT_CALENDAR,
-  ILeaveBalance,
-  INewLeave,
-  ISelectLeaveType,
-  NotificationType
-} from '../constants';
+import { DATE_FORMAT_CALENDAR, NotificationType } from '../constants';
+import { ILeaveBalance, INewLeave, ISelectLeaveType } from '../contracts';
 import { applyLeaveAction, fetchLeaveBalanceAction } from '../redux/actions';
 import { selectApplyLeave, selectLeaveBalance } from '../redux/selectors';
 import { getUserId } from '../utils';

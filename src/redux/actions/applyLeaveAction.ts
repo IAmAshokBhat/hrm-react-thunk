@@ -1,6 +1,7 @@
 import { Dispatch } from 'redux';
 import { applyLeaveAPI } from '../../api';
-import { ACTIONS, INewLeave } from '../../constants';
+import { ACTIONS } from '../../constants';
+import { INewLeave } from '../../contracts';
 import { generateAction } from './utils';
 
 export const applyLeaveAction = (newLeave: INewLeave) => (dispatch: Dispatch) =>
