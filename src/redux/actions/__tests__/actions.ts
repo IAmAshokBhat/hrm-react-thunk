@@ -1,10 +1,6 @@
 import * as api from '../../../api';
-import {
-  ACTIONS,
-  INewAttendance,
-  INewLeave,
-  IRegisterAPI
-} from '../../../constants';
+import { ACTIONS } from '../../../constants';
+import { INewAttendance, INewLeave, IRegisterAPI } from '../../../contracts';
 import { generateActionTests } from '../../../testUtils';
 import * as actions from '../index';
 
