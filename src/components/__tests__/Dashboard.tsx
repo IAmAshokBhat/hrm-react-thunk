@@ -4,7 +4,7 @@ import {
   getAttendanceDetailsAPI,
   getEventDetailsAPI
 } from '../../api';
-import { TAnyObject } from '../../constants';
+import { TAnyObject } from '../../contracts';
 import { mockAPICall, renderWithProvider } from '../../testUtils';
 import { Dashboard } from '../Dashboard';
 import {

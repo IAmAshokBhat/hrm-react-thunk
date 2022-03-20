@@ -2,7 +2,7 @@ import { screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { SnackbarProvider } from 'notistack';
 import { loginAPI } from '../../api';
-import { TAnyObject } from '../../constants';
+import { TAnyObject } from '../../contracts';
 import * as Actions from '../../redux/actions/loginAction';
 import { mockAPICall, renderWithProvider } from '../../testUtils';
 import { LoginPage } from '../Login';

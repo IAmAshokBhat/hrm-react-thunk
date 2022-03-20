@@ -1,5 +1,5 @@
 import { getUserDetailsAPI } from '../../api';
-import { TAnyObject } from '../../constants';
+import { TAnyObject } from '../../contracts';
 import { mockAPICall, renderWithProvider } from '../../testUtils';
 import { UserInfo } from '../UserInfo';
 import { defaultState, userInfoAPIResponse } from '../__tests__/fixtures';

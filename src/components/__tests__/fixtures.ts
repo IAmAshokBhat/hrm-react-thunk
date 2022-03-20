@@ -7,7 +7,7 @@ import {
   ILeaveBalanceAPI,
   IUserInfoDataAPI,
   IUserListAPI
-} from '../../constants';
+} from '../../contracts';
 
 export const defaultState: IDefaultRoot = {
   userList: { error: null, loading: false, value: [] },

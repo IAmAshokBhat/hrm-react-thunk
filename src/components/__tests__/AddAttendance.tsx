@@ -2,7 +2,7 @@ import { screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import moment from 'moment';
 import { addAttendanceAPI } from '../../api';
-import { TAnyObject } from '../../constants';
+import { TAnyObject } from '../../contracts';
 import * as Actions from '../../redux/actions/addAttendanceAction';
 import { mockAPICall, renderWithProvider } from '../../testUtils';
 import { AddAttendance } from '../AddAttendance';

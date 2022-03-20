@@ -1,5 +1,5 @@
 import { getAttendanceDetailsAPI, getEventDetailsAPI } from '../../api';
-import { TAnyObject } from '../../constants';
+import { TAnyObject } from '../../contracts';
 import { mockAPICall, renderWithProvider } from '../../testUtils';
 import { Attendance } from '../Attendance';
 import { evenDetailsAPI } from '../shared/__tests__/__ignore_tests__/fixtures';

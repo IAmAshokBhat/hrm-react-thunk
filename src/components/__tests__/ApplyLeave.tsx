@@ -2,7 +2,7 @@ import { screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { SnackbarProvider } from 'notistack';
 import { applyLeaveAPI, getLeaveBalanceAPI } from '../../api';
-import { TAnyObject } from '../../constants';
+import { TAnyObject } from '../../contracts';
 import { mockAPICall, renderWithProvider } from '../../testUtils';
 import { ApplyLeave } from '../ApplyLeave';
 import { defaultState, leaveBalanceAPIResponse } from './fixtures';

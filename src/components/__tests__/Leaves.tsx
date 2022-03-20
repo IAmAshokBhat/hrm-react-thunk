@@ -1,5 +1,5 @@
 import { getAllLeavesAPI, getLeaveBalanceAPI } from '../../api';
-import { TAnyObject } from '../../constants';
+import { TAnyObject } from '../../contracts';
 import { mockAPICall, renderWithProvider } from '../../testUtils';
 import { Leaves } from '../Leaves';
 import {
